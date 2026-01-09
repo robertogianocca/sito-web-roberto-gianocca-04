@@ -1,0 +1,9 @@
+.videoThumbnailsVerticalContainer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.videoThumbnailsVerticalContainer::-webkit-scrollbar {
+  display: none;
+}
