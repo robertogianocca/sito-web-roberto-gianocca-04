@@ -2,17 +2,17 @@ import VideoThumbnailsVertical from "@/components/Video/VideoThumbnailsVertical/
 import { videoDataBase } from "@/data/video-data-base";
 
 export default function VideoPage() {
-  const thumbnailList = videoDataBase.map((video) => ({
+  const thumbnailsList = videoDataBase.map((video) => ({
     id: video.id,
     src: video.thumbnail,
-    alt: video.title || video.id,
+    alt: video.title,
   }));
   return (
     <div>
       <h1>IM THE VIDEO PAGE</h1>
       {/* MOBILE VERSION */}
       <div className="md:hidden">
-        <VideoThumbnailsVertical images={thumbnailList} />
+        <VideoThumbnailsVertical images={thumbnailsList} />
       </div>
     </div>
   );

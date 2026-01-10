@@ -78,7 +78,7 @@ export default function VideoThumbnailsVertical({ images = [] }) {
       </div>
       <div className="flex flex-col items-center">
         {/* Top spacer */}
-        <div className="h-[50vh] flex-shrink-0" />
+        <div className="h-[50vh] shrink-0" />
 
         {images.map((image, index) => {
           const distance = Math.abs(index - focusedIndex);
@@ -94,7 +94,7 @@ export default function VideoThumbnailsVertical({ images = [] }) {
             <div
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className="snap-center snap-always flex-shrink-0 w-full max-w-sm px-0 my-4 transition-all duration-300 ease-out"
+              className="snap-center snap-always shrink-0 w-full max-w-sm px-0 my-4 transition-all duration-300 ease-out"
               style={{
                 opacity,
                 filter: `blur(${blur}px) brightness(${brightness})`,
@@ -123,7 +123,7 @@ export default function VideoThumbnailsVertical({ images = [] }) {
         })}
 
         {/* Bottom spacer */}
-        <div className="h-[50vh] flex-shrink-0" />
+        <div className="h-[50vh] shrink-0" />
       </div>
     </div>
   );
