@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+@theme {
+  /* ========== BREAKPOINT ========== */
+  --breakpoint-2xs: 320px;
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 769px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1750px;
+
+  /* ========== TEXT ========== */
+  --text-2xs: 0.8rem;
+  --text-2xs--line-height: 1.1rem;
+  --text-xs: 0.868rem;
+  --text-xs--line-height: 1.1875rem;
+  --text-sm: 1.042rem;
+  --text-sm--line-height: 1.375rem;
+  --text-sm--letter-spacing: 0em;
+  --text-base: 1.25rem;
+  --text-base--line-height: 1.6875rem;
+  --text-lg: 1.5rem;
+  --text-lg--line-height: normal;
+  --text-xl: 1.8rem;
+  --text-xl--line-height: normal;
+  --text-2xl: 2.16rem;
+  --text-2xl--line-height: normal;
+  --text-3xl: 2.592rem;
+  --text-3xl--line-height: normal;
+  --text-4xl: 3.11rem;
+  --text-4xl--line-height: normal;
+}
