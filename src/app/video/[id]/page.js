@@ -1,10 +1,8 @@
 // ========== VIDEO ID PAGE ========== //
 
+import VideoIdMobile from "@/components/Video/VideoDetails/VideoIdMobile";
 import { videoDataBase } from "@/data/video-data-base";
 import { notFound } from "next/navigation";
-import MobilePreview from "@/components/Video/VideoPreview/MobilePreview";
-import WatchButton from "@/components/Video/VideoDetails/WatchButton";
-import VideoTitleMobile from "@/components/Video/VideoDetails/VideoTitleMobile";
 
 // Generate static params for all videos at build time (better performance & SEO)
 export async function generateStaticParams() {
@@ -42,11 +40,7 @@ export default async function VideoPageId({ params }) {
   return (
     <div className="">
       {/* ==================== MOBILE ==================== */}
-      <div className="xs:hidden p-4">
-        <MobilePreview video={video} />
-        <WatchButton />
-        <VideoTitleMobile video={video} />
-      </div>
+      <VideoIdMobile video={video} />
     </div>
   );
 }

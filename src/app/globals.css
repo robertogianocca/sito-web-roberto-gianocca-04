@@ -11,6 +11,12 @@
   --color-custom-white-base: #948a7f;
   --color-custom-red: #c82020;
 
+  /* ========== FONT ========== */
+  --font-inter: var(--font-inter);
+  --font-jet-brains: var(--font-jet-brains);
+  --font-nunito-sans: var(--font-nunito-sans);
+  --font-roboto: var(--font-roboto);
+
   /* ========== BREAKPOINT ========== */
   --breakpoint-2xs: 320px;
   --breakpoint-xs: 475px;
