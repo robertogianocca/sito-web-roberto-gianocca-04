@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
 @theme {
+  /* ========== MISURE ========== */
+  --spacing-navigation-bar: 60px;
+
+  /* ========== COLORS ========== */
+  --color-player-controls: oklch(72.3% 0.219 149.579);
+  --color-credits: #36a9c3;
+  --color-credits-name: #c9bbad;
+  --color-custom-white-base: #948a7f;
+  --color-custom-red: #c82020;
+
   /* ========== BREAKPOINT ========== */
   --breakpoint-2xs: 320px;
   --breakpoint-xs: 475px;

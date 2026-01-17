@@ -42,7 +42,7 @@ export default async function VideoPageId({ params }) {
   return (
     <div className="">
       {/* ==================== MOBILE ==================== */}
-      <div className="xs:hidden">
+      <div className="xs:hidden p-4">
         <MobilePreview video={video} />
         <WatchButton />
         <VideoTitleMobile video={video} />
