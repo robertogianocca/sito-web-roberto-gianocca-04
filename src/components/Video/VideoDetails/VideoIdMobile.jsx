@@ -20,10 +20,12 @@ export default function VideoIdMobile({ video }) {
     <div className="p-4">
       <MobilePreview video={video} />
       <WatchButton scrollToPlayer={scrollToPlayer} />
-      <div ref={playerRef} className="h-screen flex flex-col pt-4 gap-y-50 mb-[500px]">
+      <div ref={playerRef} className="h-screen flex flex-col pt-4 gap-y-10">
         <VideoTitleMobile video={video} />
+        {video.credits}
         <PlayerMobile video={video} />
-        <Player video={video} />
+        {video.description}
+        {/* <Player video={video} /> */}
       </div>
     </div>
   );
