@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../components/Video/Player/Player.css";
 
 @theme {
   /* ========== MISURE ========== */
