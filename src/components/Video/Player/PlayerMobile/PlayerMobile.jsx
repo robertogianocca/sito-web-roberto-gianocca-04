@@ -39,17 +39,19 @@ export default function PlayerMobile({ video, player }) {
         style={{ width: "100%", height: "auto" }}
         load="idle"
         playsInline
-        poster="/public/textures/texture-background-01.webp"
         className="flex flex-col"
         playbackRate={1}  // Add this line - locks it to normal speed
         
 
       >
         <MediaProvider />
-        {/* <Gesture className="vds-gesture" event="pointerup" action="toggle:controls" /> */}
-
-        <Controls.Root className="vds-controls-mobile" >
-        <div className="flex flex-row">
+        <Gesture
+            event="click"
+            action="toggle:paused"
+            className="absolute inset-0"
+            aria-hidden="false"
+          />
+        <div className="flex flex-row ">
           <div className="pointer-events-auto">
           <MobilePlayButton playerColor={playerColor} />
           </div>
@@ -57,7 +59,6 @@ export default function PlayerMobile({ video, player }) {
           <MobileFullscreenButton playerColor={playerColor} />
           </div>
         </div>
-        </Controls.Root>
 
       </MediaPlayer>
     </div>

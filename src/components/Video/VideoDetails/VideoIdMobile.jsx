@@ -24,7 +24,7 @@ export default function VideoIdMobile({ video }) {
   }
 
   return (
-    <div className="p-4">
+    <div className="p-4 pb-100">
       <MobilePreview video={video} />
       <WatchButton scrollToPlayer={scrollToPlayer} />
       <div ref={positionRef} className="flex flex-col pt-4 gap-y-10">
@@ -32,7 +32,7 @@ export default function VideoIdMobile({ video }) {
         {video.credits}
         <PlayerMobile player={playerRef} video={video} />
         {video.description}
-        <Player video={video} />
+        {/* <Player video={video} /> */}
       </div>
     </div>
   );
