@@ -51,6 +51,7 @@ export default function PlayerMobile({ video, player }) {
             className="absolute inset-0"
             aria-hidden="false"
           />
+            <Controls.Root className="vds-controls-mobile" >
         <div className="flex flex-row ">
           <div className="pointer-events-auto">
           <MobilePlayButton playerColor={playerColor} />
@@ -59,7 +60,7 @@ export default function PlayerMobile({ video, player }) {
           <MobileFullscreenButton playerColor={playerColor} />
           </div>
         </div>
-
+        </Controls.Root>
       </MediaPlayer>
     </div>
   );
