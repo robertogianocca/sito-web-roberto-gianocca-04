@@ -8,11 +8,18 @@ import Player from "@/components/Video/Player/Player";
 import VideoTitleMobile from "@/components/Video/VideoDetails/VideoTitleMobile";
 
 export default function VideoIdMobile({ video }) {
-  const playerRef = useRef(null);
+  const positionRef = useRef(null);
+  const playerRef = useRef(null); // This now references the PlayerMobile component
 
   function scrollToPlayer() {
-    if (playerRef.current) {
-      playerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (positionRef.current) {
+      positionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+     // Wait for scroll to finish, then play the video
+     setTimeout(() => {
+      if (playerRef.current) {
+        playerRef.current.play();
+      }
+    }, 500); // Adjust timing based on your scroll duration
     }
   }
 
@@ -20,12 +27,12 @@ export default function VideoIdMobile({ video }) {
     <div className="p-4">
       <MobilePreview video={video} />
       <WatchButton scrollToPlayer={scrollToPlayer} />
-      <div ref={playerRef} className="h-screen flex flex-col pt-4 gap-y-10">
+      <div ref={positionRef} className="flex flex-col pt-4 gap-y-10">
         <VideoTitleMobile video={video} />
         {video.credits}
-        <PlayerMobile video={video} />
+        <PlayerMobile player={playerRef} video={video} />
         {video.description}
-        {/* <Player video={video} /> */}
+        <Player video={video} />
       </div>
     </div>
   );

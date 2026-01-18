@@ -1,11 +1,13 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { MediaPlayer, MediaProvider } from "@vidstack/react";
+import { MediaPlayer, MediaProvider, Controls, Gesture } from "@vidstack/react";
 import MobilePlayButton from "@/components/Video/Player/PlayerMobile/MobilePlayButton";
 import MobileFullscreenButton from "@/components/Video/Player/PlayerMobile/MobileFullscreenButton";
 
-export default function PlayerMobile({ video }) {
+
+
+export default function PlayerMobile({ video, player }) {
   const playerColor = {
     playButtonBg: "",
     playButtonText: "white",
@@ -21,9 +23,10 @@ export default function PlayerMobile({ video }) {
     type: "video/vimeo",
   };
 
-  const player = useRef(null);
+  // const player = useRef(null);
   const containerRef = useRef(null);
   const controlsRef = useRef(null);
+
 
   return (
     <div className="flex flex-col">
@@ -38,12 +41,24 @@ export default function PlayerMobile({ video }) {
         playsInline
         poster="/public/textures/texture-background-01.webp"
         className="flex flex-col"
+        playbackRate={1}  // Add this line - locks it to normal speed
+        
+
       >
         <MediaProvider />
+        {/* <Gesture className="vds-gesture" event="pointerup" action="toggle:controls" /> */}
+
+        <Controls.Root className="vds-controls-mobile" >
         <div className="flex flex-row">
+          <div className="pointer-events-auto">
           <MobilePlayButton playerColor={playerColor} />
+          </div>
+          <div className="pointer-events-auto">
           <MobileFullscreenButton playerColor={playerColor} />
+          </div>
         </div>
+        </Controls.Root>
+
       </MediaPlayer>
     </div>
   );
