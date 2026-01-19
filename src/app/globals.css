@@ -52,15 +52,17 @@
 }
 
 /* globals.css */
-body {
-  /* background-color: #456dff; */
+
+html {
+  /* Avoid white blink */
+  background-color: #5062c5;
   background-image: url("/textures/texture-background-01.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-body::after {
+/* body::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -68,4 +70,4 @@ body::after {
   pointer-events: none;
   mix-blend-mode: multiply;
   z-index: -1;
-}
+} */
