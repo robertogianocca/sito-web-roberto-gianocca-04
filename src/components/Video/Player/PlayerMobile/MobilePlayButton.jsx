@@ -14,6 +14,9 @@ export default function MobilePlayButton({ playerColor }) {
         backgroundColor: playerColor.playButtonBg,
       }}
     >
+
+
+
       {isPaused ? (
         <>
           <PlayIcon className="play-icon vds-icon" size={70} />

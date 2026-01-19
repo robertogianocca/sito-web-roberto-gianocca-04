@@ -6,29 +6,48 @@
 @import "@vidstack/react/player/styles/default/gestures.css";
 @import "@vidstack/react/player/styles/default/time.css";
 
-@import '@vidstack/react/player/styles/default/theme.css';
-@import '@vidstack/react/player/styles/default/layouts/video.css';
+@import "@vidstack/react/player/styles/default/theme.css";
+@import "@vidstack/react/player/styles/default/layouts/video.css";
 
 .vds-controls-mobile {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 2s ease-out, visibility 0s linear 4s !important;
+  transition:
+    opacity 2s ease-out,
+    visibility 0s linear 4s !important;
 }
+
 .vds-controls-mobile[data-visible] {
   opacity: 1;
   visibility: visible;
-  transition: opacity 2s ease-out, visibility 0s !important;
+  transition:
+    opacity 2s ease-out,
+    visibility 0s !important;
 }
 
+.vds-controls-mobile[data-fullscreen] {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
 
-/* Eeventualmente per fullscreen ma non funziona */
-/* .player-wrapper-mobile [data-fullscreen] {
-  position: relative !important;
+/* Questa forma considera .provider-mobile se il suo contenitore dispone dell'attributo [data-fullscreen] */
+[data-fullscreen] .provider-mobile {
+  margin: auto;
+  width: auto !important;
+  height: 100% !important;
+}
+
+.player-wrapper-mobile[data-fullscreen] {
+  flex-direction: row;
+  width: 200px !important;
+  /* position: relative !important;
   position: absolute !important;
   left: 20px;
   background-color: blueviolet;
   border: solid;
   border-radius: 20px;
-  --media-object-fit: contain;
-
-} */
+  --media-object-fit: contain; */
+}
