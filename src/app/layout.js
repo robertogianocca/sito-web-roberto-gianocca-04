@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Inter, JetBrains_Mono, Nunito_Sans, Roboto } from "next/font/google";
-import Background from "@/components/Background/Background";
 
 export const metadata = {
   title: "",
@@ -38,7 +37,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${jetBrains.variable} ${nunitoSans.variable} ${roboto.variable} antialiased text-custom-white-base text-sm font-roboto `}
       >
-        <Background color="#456DFF" />
         {children}
       </body>
     </html>

@@ -50,3 +50,22 @@
   --text-4xl: 3.11rem;
   --text-4xl--line-height: normal;
 }
+
+/* globals.css */
+body {
+  /* background-color: #456dff; */
+  background-image: url("/textures/texture-background-01.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: #5062c5;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
