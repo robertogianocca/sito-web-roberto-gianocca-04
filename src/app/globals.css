@@ -2,8 +2,6 @@
 @import "../components/Video/Player/Player.css";
 @import "../components/Video/Player/PlayerMobile/PlayerMobile.css";
 
-
-
 @theme {
   /* ========== MISURE ========== */
   --spacing-navigation-bar: 60px;
@@ -12,7 +10,7 @@
   --color-player-controls: oklch(72.3% 0.219 149.579);
   --color-credits: #36a9c3;
   --color-credits-name: #c9bbad;
-  --color-custom-white-base: #948a7f;
+  --color-custom-white-base: #a99f95;
   --color-custom-red: #c82020;
 
   /* ========== FONT ========== */

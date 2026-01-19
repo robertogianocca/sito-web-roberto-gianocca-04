@@ -79,7 +79,7 @@ export default function VideoThumbnailsVertical({ images = [] }) {
           const opacity = Math.max(0.3, 1 - normalized * 1.2);
           const blur = normalized * 8;
           const brightness = Math.max(0.4, 1 - normalized * 0.6);
-          const scale = Math.max(0.85, 1 - normalized * 0.15);
+          const scale = Math.max(0.85, 1.05 - normalized * 0.15);
 
           return (
             <div

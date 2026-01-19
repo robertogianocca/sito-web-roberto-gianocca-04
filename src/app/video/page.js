@@ -29,9 +29,9 @@ export default function VideoPage() {
       </div>
       {/* ========== MOBILE VERSION ========== */}
       <div className="md:hidden flex flex-col">
-        <div className="absolute top-0 z-90 w-full p-6 col-span-3">
-          <h1 className="text-3xl pb-4">Video</h1>
-          <p>
+        <div className="absolute top-0 z-90 w-full p-3 col-span-3">
+          <h1 className="text-3xl font-light pb-4">Video</h1>
+          <p className="font-bold">
             Is a long established fact that a reader will be distracted by the readable content of a
             page when looking at its layout. The point of using Lorem Ipsum is that it has a
             more-or-less normal distribution of letters, as opposed to using 'Content here, content

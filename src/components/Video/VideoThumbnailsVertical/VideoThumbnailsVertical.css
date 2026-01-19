@@ -7,3 +7,8 @@
 .videoThumbnailsVerticalContainer::-webkit-scrollbar {
   display: none;
 }
+
+.videoThumbnailsVerticalContainer {
+  padding: 0 1rem; /* or any horizontal padding */
+  margin: 0 auto; /* could also cause side gaps */
+}

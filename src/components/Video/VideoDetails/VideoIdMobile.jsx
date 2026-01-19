@@ -4,7 +4,6 @@ import { useRef } from "react";
 import MobilePreview from "@/components/Video/VideoPreview/MobilePreview";
 import WatchButton from "@/components/Video/VideoDetails/WatchButton";
 import PlayerMobile from "@/components/Video/Player/PlayerMobile/PlayerMobile";
-import Player from "@/components/Video/Player/Player";
 import VideoTitleMobile from "@/components/Video/VideoDetails/VideoTitleMobile";
 
 export default function VideoIdMobile({ video }) {
@@ -14,12 +13,12 @@ export default function VideoIdMobile({ video }) {
   function scrollToPlayer() {
     if (positionRef.current) {
       positionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-     // Wait for scroll to finish, then play the video
-     setTimeout(() => {
-      if (playerRef.current) {
-        playerRef.current.play();
-      }
-    }, 500); // Adjust timing based on your scroll duration
+      // Wait for scroll to finish, then play the video
+      setTimeout(() => {
+        if (playerRef.current) {
+          playerRef.current.play();
+        }
+      }, 500); // Adjust timing based on your scroll duration
     }
   }
 
@@ -32,7 +31,6 @@ export default function VideoIdMobile({ video }) {
         {video.credits}
         <PlayerMobile player={playerRef} video={video} />
         {video.description}
-        {/* <Player video={video} /> */}
       </div>
     </div>
   );

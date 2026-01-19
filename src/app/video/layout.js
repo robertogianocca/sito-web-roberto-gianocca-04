@@ -1,6 +1,8 @@
+/* ========== VIDEO PAGE LAYOUT PAGE========== */
+
 import NavigationBar from "@/components/Menu/Mobile/NavigationBar";
 
-export default function VideoIdLayout({ children }) {
+export default function VideoLayoutPage({ children }) {
   return (
     <>
       <NavigationBar />
