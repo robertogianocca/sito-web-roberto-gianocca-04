@@ -67,15 +67,6 @@ export default function VideoThumbnailsVertical({ images = [] }) {
       ref={containerRef}
       className="videoThumbnailsVerticalContainer h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth"
     >
-      <div className="absolute top-0 z-90 w-full p-4">
-        <h1>Video</h1>
-        <p>
-          Is a long established fact that a reader will be distracted by the readable content of a
-          page when looking at its layout. The point of using Lorem Ipsum is that it has a
-          more-or-less normal distribution of letters, as opposed to using 'Content here, content
-          here', making it look like readable English.
-        </p>
-      </div>
       <div className="flex flex-col items-center">
         {/* Top spacer */}
         <div className="h-[50vh] shrink-0" />
