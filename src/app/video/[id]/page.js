@@ -1,6 +1,7 @@
 // ========== VIDEO ID PAGE ========== //
 
 import VideoIdMobile from "@/components/Video/VideoDetails/VideoIdMobile";
+import VideoIdDesktop from "@/components/Video/VideoDetails/VideoIdDesktop";
 import { videoDataBase } from "@/data/video-data-base";
 import { notFound } from "next/navigation";
 
@@ -40,7 +41,13 @@ export default async function VideoPageId({ params }) {
   return (
     <div className="">
       {/* ==================== MOBILE ==================== */}
-      <VideoIdMobile video={video} />
+      <div className="lg:hidden">
+        <VideoIdMobile video={video} />
+      </div>
+      <div className="hidden lg:block">
+        {/* ==================== DESKTOP ==================== */}
+        <VideoIdDesktop video={video} />
+      </div>
     </div>
   );
 }

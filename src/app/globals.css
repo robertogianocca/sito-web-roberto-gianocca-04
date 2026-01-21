@@ -54,11 +54,10 @@
 /* globals.css */
 
 html {
-  /* Avoid white blink */
-  background-color: #5062c5;
   background-image: url("/textures/texture-background-01.webp");
+  background-color: #2a2a2a;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
