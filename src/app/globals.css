@@ -51,6 +51,12 @@
   --text-4xl--line-height: normal;
 }
 
+@layer components {
+  .grid-custom {
+    @apply grid grid-cols-5 gap-20 p-8;
+  }
+}
+
 /* globals.css */
 
 html {
@@ -61,12 +67,12 @@ html {
   background-repeat: no-repeat;
 }
 
-/* body::after {
+body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-color: #5062c5;
+  background-color: #9fa6cb;
   pointer-events: none;
   mix-blend-mode: multiply;
   z-index: -1;
-} */
+}

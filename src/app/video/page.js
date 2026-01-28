@@ -1,5 +1,6 @@
 /* ========== VIDEO PAGE ========== */
 
+import NavigationBarDesk from "@/components/Menu/Desktop/NavigationBarkDesk";
 import VideoThumbnails from "@/components/Video/VideoThumbnails";
 import VideoThumbnailsVertical from "@/components/Video/VideoThumbnailsVertical/VideoThumbnailsVertical";
 import { videoDataBase } from "@/data/video-data-base";
@@ -15,7 +16,8 @@ export default function VideoPage() {
       {/* ========== DESKTOP VERSION ========== */}
       <div className="hidden md:grid lg:grid-cols-5 gap-20 col-span-2 p-8">
         <div className="col-span-2">
-          <h1 className="text-3xl pb-4">Video</h1>
+          <NavigationBarDesk />
+          <h1 className="text-3xl pb-4 pt-4">Video</h1>
           <p className="pb-4">
             Is a long established fact that a reader will be distracted by the readable content of a
             page when looking at its layout. The point of using Lorem Ipsum is that it has a
