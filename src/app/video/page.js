@@ -25,9 +25,9 @@ export default function VideoPage() {
             here', making it look like readable English.
           </p>
         </div>
-        <div className="col-span-3">
+        <ul role="list" className="col-span-3 grid grid-cols-3 gap-x-5">
           <VideoThumbnails />
-        </div>
+        </ul>
       </div>
       {/* ========== MOBILE VERSION ========== */}
       <div className="md:hidden flex flex-col">

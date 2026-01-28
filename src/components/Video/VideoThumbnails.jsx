@@ -41,8 +41,8 @@ export default function VideoThumbnails() {
             src={video.thumbnail}
             draggable={false}
             priority={index === 0}
-            width={1920}
-            height={1080}
+            width={192}
+            height={108}
             sizes="(min-width:769px) 400px, 100vw"
             className={`transition-all duration-300 rounded-2xl ${
               isSelected
@@ -56,9 +56,5 @@ export default function VideoThumbnails() {
     );
   });
 
-  return (
-    <ul role="list" className="grid grid-cols-3 gap-x-5">
-      {mappedVideo}
-    </ul>
-  );
+  return mappedVideo;
 }
