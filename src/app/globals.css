@@ -59,15 +59,15 @@
 
 /* globals.css */
 
-html {
+/* html {
   background-image: url("/textures/texture-background-01.webp");
   background-color: #2a2a2a;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-}
+} */
 
-body::after {
+/* body::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -75,4 +75,8 @@ body::after {
   pointer-events: none;
   mix-blend-mode: multiply;
   z-index: -1;
-}
+} */
+
+/* body {
+  scroll-behavior: smooth;
+} */
