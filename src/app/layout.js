@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Inter, JetBrains_Mono, Nunito_Sans, Roboto } from "next/font/google";
+import NavigationBarDesk from "@/components/Menu/Desktop/NavigationBarkDesk";
+import Main from "@/components/Main/Main";
 
 export const metadata = {
   title: "",
@@ -33,12 +35,12 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-stone-100">
+    <html lang="en">
       {/* <head>
         <link rel="preload" href="/textures/texture-background-01.webp" as="image" />
       </head> */}
       <body
-        className={`${inter.variable} ${jetBrains.variable} ${nunitoSans.variable} ${roboto.variable} antialiased text-custom-white-base text-sm font-roboto `}
+        className={`${inter.variable} ${jetBrains.variable} ${nunitoSans.variable} ${roboto.variable} antialiased text-custom-white-base text-sm font-roboto`}
       >
         {children}
       </body>

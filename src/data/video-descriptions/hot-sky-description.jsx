@@ -1,32 +1,26 @@
+import CreditsTitle from "@/components/Video/Credits/CreditsTitle";
 import CreditsName from "@/components/Video/Credits/CreditsName";
 import CreditsWrapper from "@/components/Video/Credits/CreditsWrapper";
+import VideoDescription from "@/components/Video/Description/VideoDescription";
 
 export const hotSkyDescription = {
   credits: (
     <CreditsWrapper>
-      <p>
-        Direction, Camera, Editing, Post-production:<CreditsName>Roberto Gianocca</CreditsName>
-      </p>
-      <p>
-        Collaboration and Assistance:
-        <CreditsName>Caroline Cavalcante, Matteo Marazzi.</CreditsName>
-      </p>
+      <CreditsTitle>Direction, Camera, Editing, Post-production:</CreditsTitle>
+      <CreditsName>Roberto Gianocca</CreditsName>
 
-      <p>
-        Robot Technical Assistance:
-        <CreditsName>Carrara Modellismo</CreditsName>
-      </p>
+      <CreditsTitle>Collaboration and Assistance:</CreditsTitle>
+      <CreditsName>Caroline Cavalcante, Matteo Marazzi.</CreditsName>
+
+      <CreditsTitle>Robot Technical Assistance:</CreditsTitle>
+      <CreditsName>Carrara Modellismo</CreditsName>
     </CreditsWrapper>
   ),
   description: (
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has survived not only five
-      centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-      was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-      passages, and more recently with desktop publishing software like Aldus PageMaker including
-      versions of Lorem Ipsum.
-    </p>
+    <VideoDescription>
+      Un giovane "vacuum cleaner" decide di dare un taglio alla sua vita abitudinaria e partire per
+      un avventura, alla rassegna del gioco e di incontri speciali. Il film è stato realizzato con
+      la preziosa collaborazione di Damiano Carrara per la creazione del personaggio.
+    </VideoDescription>
   ),
 };

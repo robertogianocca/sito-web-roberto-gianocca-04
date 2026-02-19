@@ -27,8 +27,8 @@ export default function NavigationBarDesk() {
   });
 
   return (
-    <div className="w-max hidden lg:block bg-red-800 p-1 rounded-lg ml-[-10px] px-4 font-jet-brains">
-      <ul className="flex gap-5 ">{menuList}</ul>
-    </div>
+    <nav className="fixed top-0 left-0 w-full h-[35px] bg-slate-800 px-wrapper font-jet-brains flex items-center ">
+      <ul className="flex gap-5 items-center">{menuList}</ul>
+    </nav>
   );
 }

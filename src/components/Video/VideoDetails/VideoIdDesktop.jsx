@@ -2,7 +2,6 @@
 
 "use client";
 import { useRef, useEffect } from "react";
-import NavigationBarDesk from "@/components/Menu/Desktop/NavigationBarkDesk";
 import Player from "@/components/Video/Player/Player";
 import VideoTitleMobile from "@/components/Video/VideoDetails/VideoTitleMobile";
 import FooterVideoThumbnails from "@/components/Video/Footer/FooterVideoThumbnails";
@@ -33,11 +32,10 @@ export default function VideoIdDesktop({ video }) {
     <>
       <div
         ref={scrollContainerRef}
-        className="flex flex-row overflow-x-scroll overflow-y-hidden h-[75%]"
+        className="flex flex-row w-full p-wrapper overflow-x-scroll overflow-y-hiddenflex-1 min-h-[calc(100dvh-35px)]"
       >
-        <section className="grid-custom flex-shrink-0 w-screen">
+        <section className="grid-custom shrink-0 w-full">
           <div className="col-span-2">
-            <NavigationBarDesk />
             {/* <div className="absolute inset-0 bg-black w-full h-dvh backdrop-blur-2xl opacity-65"></div> */}
             <VideoTitleMobile video={video} />
             {video.credits}
@@ -47,10 +45,8 @@ export default function VideoIdDesktop({ video }) {
             <Player video={video} />
           </div>
         </section>
-        <section className="grid-custom flex-shrink-0 w-screen">
+        {/* <section className="grid-custom flex-shrink-0 w-screen">
           <div className="col-span-2">
-            <NavigationBarDesk />
-            {/* <div className="absolute inset-0 bg-black w-full h-dvh backdrop-blur-2xl opacity-65"></div> */}
             <VideoTitleMobile video={video} />
             {video.credits}
             {video.description}
@@ -58,7 +54,7 @@ export default function VideoIdDesktop({ video }) {
           <div className="col-span-3">
             <Player video={video} />
           </div>
-        </section>
+        </section> */}
       </div>
       <Footer>
         <p className="text-black text-base mb-2">Other Videos:</p>

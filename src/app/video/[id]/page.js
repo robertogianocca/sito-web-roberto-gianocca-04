@@ -39,15 +39,15 @@ export default async function VideoPageId({ params }) {
   }
 
   return (
-    <div className="">
+    <>
       {/* ==================== MOBILE ==================== */}
       <div className="lg:hidden">
         <VideoIdMobile video={video} />
       </div>
-      <div className="hidden lg:block h-dvh">
+      <div className="hidden lg:block">
         {/* ==================== DESKTOP ==================== */}
         <VideoIdDesktop video={video} />
       </div>
-    </div>
+    </>
   );
 }
