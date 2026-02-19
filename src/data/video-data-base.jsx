@@ -64,4 +64,24 @@ export const videoDataBase = [
     previewMobile:
       "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713767/carie-video-preview-mobile_vhy68g.mp4",
   },
+  // {
+  //   id: "MZANSI Festival",
+  //   vimeoId: "1145671365",
+  //   title: "MZANSI Festival",
+  //   subtitle: (
+  //     <>
+  //       A sports documentary film about <span className="italic">Carrara’s quarries</span>
+  //     </>
+  //   ),
+  //   credits: carieDescription.credits,
+  //   links: carieDescription.links,
+  //   description: carieDescription.description,
+  //   cover: "https://res.cloudinary.com/dqwtukgp2/image/upload/v1767713764/carie-cover_zvf5dc.jpg",
+  //   thumbnail:
+  //     "https://res.cloudinary.com/dqwtukgp2/image/upload/v1767538035/carie-thumbnail_j2yoq7.jpg",
+  //   preview:
+  //     "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713763/carie-video-preview_jk3ute.mp4",
+  //   previewMobile:
+  //     "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713767/carie-video-preview-mobile_vhy68g.mp4",
+  // },
 ];
