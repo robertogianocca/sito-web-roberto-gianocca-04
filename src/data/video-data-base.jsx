@@ -1,6 +1,7 @@
 import { sugarMamaDescription } from "@/data/video-descriptions/sugar-mama-description";
 import { hotSkyDescription } from "@/data/video-descriptions/hot-sky-description";
 import { carieDescription } from "@/data/video-descriptions/carie-description";
+import { metParachuteDescription } from "@/data/video-descriptions/met-parachute-description";
 
 export const videoDataBase = [
   {
@@ -63,6 +64,27 @@ export const videoDataBase = [
       "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713763/carie-video-preview_jk3ute.mp4",
     previewMobile:
       "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713767/carie-video-preview-mobile_vhy68g.mp4",
+  },
+  {
+    id: "met-parachute",
+    vimeoId: "676799834",
+    title: "MET Parachute MCR",
+    subtitle: (
+      <>
+        A commercial for <span className="italic">MET Helmets Parachute MCR</span>
+      </>
+    ),
+    credits: metParachuteDescription.credits,
+    links: metParachuteDescription.links,
+    description: metParachuteDescription.description,
+    cover:
+      "https://res.cloudinary.com/dqwtukgp2/image/upload/v1771599458/met-parachute-cover_da5ckh.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqwtukgp2/image/upload/v1771599457/met-parachute-thumbnail_djjbmb.jpg",
+    preview:
+      "https://res.cloudinary.com/dqwtukgp2/video/upload/v1771599452/met-parachute-video-preview_fc8cjx.mp4",
+    previewMobile:
+      "https://res.cloudinary.com/dqwtukgp2/video/upload/v1771599469/met-parachute-video-preview-mobile_nqukow.mp4",
   },
   // {
   //   id: "MZANSI Festival",
