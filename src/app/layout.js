@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/textures/texture-background-01.webp" as="image" />
       </head> */}
       <body
-        className={`${inter.variable} ${jetBrains.variable} ${nunitoSans.variable} ${roboto.variable} antialiased text-custom-white-base text-sm font-roboto`}
+        className={`${inter.variable} ${jetBrains.variable} ${nunitoSans.variable} ${roboto.variable} antialiased font-roboto text-custom-text-base text-sm bg-custom-white-base`}
       >
         {children}
       </body>

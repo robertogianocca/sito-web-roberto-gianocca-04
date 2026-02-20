@@ -8,10 +8,12 @@
   --spacing-wrapper: 30px;
 
   /* ========== COLORS ========== */
+  --color-custom-white-base: #f9f9f9;
+  --color-custom-text-base: #867e77;
+  --color-custom-text-menu-hover: #b0a69d;
   --color-player-controls: oklch(72.3% 0.219 149.579);
-  --color-credits-title: #36a9c3;
+  --color-credits-title: #867e77;
   --color-credits-name: #867e77;
-  --color-custom-white-base: #867e77;
   --color-custom-red: #c82020;
 
   /* ========== FONT ========== */
