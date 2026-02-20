@@ -1,3 +1,3 @@
 export default function CreditsName({ children }) {
-  return <p className="pl-3 text-credits-name">{children}</p>;
+  return <span className="pl-1 text-credits-name">{children}</span>;
 }

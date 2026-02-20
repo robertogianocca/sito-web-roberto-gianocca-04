@@ -1,35 +1,36 @@
 import CreditsWrapper from "@/components/Video/Credits/CreditsWrapper";
+import CreditsTitle from "@/components/Video/Credits/CreditsTitle";
 import CreditsName from "@/components/Video/Credits/CreditsName";
 
 export const sugarMamaDescription = {
   credits: (
     <CreditsWrapper>
-      <p>
+      <CreditsTitle>
         Direction, Editing, Post-production:<CreditsName>Roberto Gianocca</CreditsName>
-      </p>
-      <p>
+      </CreditsTitle>
+      <CreditsTitle>
         Assistant Director:
         <CreditsName>Shondel Bervini</CreditsName>
-      </p>
-      <p>
+      </CreditsTitle>
+      <CreditsTitle>
         Styling & Costumes:
         <CreditsName>Shondel Bervini, Sofia Buob</CreditsName>
-      </p>
-      <p>
+      </CreditsTitle>
+      <CreditsTitle>
         Make-up & Hair:
         <CreditsName>Sofia Buob</CreditsName>
-      </p>
-      <p>
+      </CreditsTitle>
+      <CreditsTitle>
         Performers:
         <CreditsName>Matt Pascale, Sofia Buob, Shondel Bervini</CreditsName>
-      </p>
-      <p>
+      </CreditsTitle>
+      <CreditsTitle>
         Special Thanks:
         <CreditsName>
           Elia Squartini, Gianni Muggeo, Andrea Zanni, Alan Fraquelli, Maurizio Faggi, Giulia
           Campiglia, Wabi the Dog
         </CreditsName>
-      </p>
+      </CreditsTitle>
     </CreditsWrapper>
   ),
 };

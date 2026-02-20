@@ -6,21 +6,21 @@ import VideoDescription from "@/components/Video/Description/VideoDescription";
 export const hotSkyDescription = {
   credits: (
     <CreditsWrapper>
-      <CreditsTitle>Direction, Camera, Editing, Post-production:</CreditsTitle>
-      <CreditsName>Roberto Gianocca</CreditsName>
+      <CreditsTitle>
+        Direction, Camera, Editing, Post-production:
+        <CreditsName>Roberto Gianocca</CreditsName>
+      </CreditsTitle>
 
-      <CreditsTitle>Collaboration and Assistance:</CreditsTitle>
-      <CreditsName>Caroline Cavalcante, Matteo Marazzi.</CreditsName>
+      <CreditsTitle>
+        Collaboration and Assistance:
+        <CreditsName>Caroline Cavalcante, Matteo Marazzi.</CreditsName>
+      </CreditsTitle>
 
-      <CreditsTitle>Robot Technical Assistance:</CreditsTitle>
-      <CreditsName>Carrara Modellismo</CreditsName>
+      <CreditsTitle>
+        Robot Technical Assistance:
+        <CreditsName>Carrara Modellismo</CreditsName>
+      </CreditsTitle>
     </CreditsWrapper>
   ),
-  description: (
-    <VideoDescription>
-      Un giovane "vacuum cleaner" decide di dare un taglio alla sua vita abitudinaria e partire per
-      un avventura, alla rassegna del gioco e di incontri speciali. Il film è stato realizzato con
-      la preziosa collaborazione di Damiano Carrara per la creazione del personaggio.
-    </VideoDescription>
-  ),
+  description: <VideoDescription></VideoDescription>,
 };
