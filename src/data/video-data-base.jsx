@@ -2,6 +2,7 @@ import { sugarMamaDescription } from "@/data/video-descriptions/sugar-mama-descr
 import { hotSkyDescription } from "@/data/video-descriptions/hot-sky-description";
 import { carieDescription } from "@/data/video-descriptions/carie-description";
 import { metParachuteDescription } from "@/data/video-descriptions/met-parachute-description";
+import { mzansiDescription } from "@/data/video-descriptions/mzansi-description";
 
 export const videoDataBase = [
   {
@@ -10,7 +11,7 @@ export const videoDataBase = [
     title: "Sugar Mama",
     subtitle: (
       <>
-        A music video for <span className="italic">Matt Pascale & The Stomps</span>
+        Music video for <span className="italic">Matt Pascale & The Stomps</span>
       </>
     ),
     credits: sugarMamaDescription.credits,
@@ -31,7 +32,7 @@ export const videoDataBase = [
     title: "Hot Sky",
     subtitle: (
       <>
-        A music video for <span className="italic">the Yuna Hawks</span>
+        Music video for <span className="italic">the Yuna Hawks</span>
       </>
     ),
     credits: hotSkyDescription.credits,
@@ -51,7 +52,7 @@ export const videoDataBase = [
     title: "CARIE",
     subtitle: (
       <>
-        A sports documentary film about <span className="italic">Carrara’s quarries</span>
+        Sports documentary film about <span className="italic">Carrara’s quarries</span>
       </>
     ),
     credits: carieDescription.credits,
@@ -71,7 +72,7 @@ export const videoDataBase = [
     title: "MET Parachute MCR",
     subtitle: (
       <>
-        A commercial for <span className="italic">MET Helmets Parachute MCR</span>
+        Commercial for <span className="italic">MET Helmets Parachute MCR</span>
       </>
     ),
     credits: metParachuteDescription.credits,
@@ -86,24 +87,20 @@ export const videoDataBase = [
     previewMobile:
       "https://res.cloudinary.com/dqwtukgp2/video/upload/v1771599469/met-parachute-video-preview-mobile_nqukow.mp4",
   },
-  // {
-  //   id: "MZANSI Festival",
-  //   vimeoId: "1145671365",
-  //   title: "MZANSI Festival",
-  //   subtitle: (
-  //     <>
-  //       A sports documentary film about <span className="italic">Carrara’s quarries</span>
-  //     </>
-  //   ),
-  //   credits: carieDescription.credits,
-  //   links: carieDescription.links,
-  //   description: carieDescription.description,
-  //   cover: "https://res.cloudinary.com/dqwtukgp2/image/upload/v1767713764/carie-cover_zvf5dc.jpg",
-  //   thumbnail:
-  //     "https://res.cloudinary.com/dqwtukgp2/image/upload/v1767538035/carie-thumbnail_j2yoq7.jpg",
-  //   preview:
-  //     "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713763/carie-video-preview_jk3ute.mp4",
-  //   previewMobile:
-  //     "https://res.cloudinary.com/dqwtukgp2/video/upload/v1767713767/carie-video-preview-mobile_vhy68g.mp4",
-  // },
+  {
+    id: "mzansi",
+    vimeoId: "1145671365",
+    title: "MZANSI Festival",
+    subtitle: <>Reportage of a dance and music event</>,
+    credits: mzansiDescription.credits,
+    links: mzansiDescription.links,
+    description: mzansiDescription.description,
+    cover: "https://res.cloudinary.com/dqwtukgp2/image/upload/v1771613604/mzansi-cover_yt7j9t.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqwtukgp2/image/upload/v1771613600/mzansi-thumbnail_zlflls.jpg",
+    preview:
+      "https://res.cloudinary.com/dqwtukgp2/video/upload/v1771613604/mzansi-video-preview_ikeo5x.mp4",
+    previewMobile:
+      "https://res.cloudinary.com/dqwtukgp2/video/upload/v1771613602/mzansi-video-preview-mobile_tg6qlx.mp4",
+  },
 ];
