@@ -7,18 +7,18 @@ export default function VideoTimeSlider({ playerColor }) {
     <div className="time-slider">
       <TimeSlider.Root className="vds-time-slider vds-slider">
         <TimeSlider.Track
-          className="vds-slider-track rounded-none!"
+          className="vds-slider-track rounded-none! h-2!"
           style={{ backgroundColor: playerColor.backBar }}
         />
         <TimeSlider.TrackFill
-          className="vds-slider-track-fill vds-slider-track rounded-none!"
+          className="vds-slider-track-fill vds-slider-track rounded-none! h-2!"
           style={{ backgroundColor: playerColor.timeBar }}
         />
         <TimeSlider.Progress
-          className="vds-slider-progress vds-slider-track rounded-none!"
+          className="vds-slider-progress vds-slider-track rounded-none! h-2!"
           style={{ backgroundColor: playerColor.progressBar }}
         />
-        <TimeSlider.Thumb className="vds-slider-thumb" />
+        <TimeSlider.Thumb className="vds-slider-thumb bg-red-600! border-none! h-3! w-3!" />
         <TimeSlider.Preview className="vds-slider-preview">
           <TimeSlider.Value className="vds-slider-value" />
         </TimeSlider.Preview>
@@ -26,4 +26,3 @@ export default function VideoTimeSlider({ playerColor }) {
     </div>
   );
 }
-

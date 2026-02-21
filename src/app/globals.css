@@ -56,7 +56,7 @@
 
 @layer components {
   .grid-custom {
-    @apply grid grid-cols-5 gap-20;
+    @apply grid grid-cols-5 gap-8;
   }
 }
 

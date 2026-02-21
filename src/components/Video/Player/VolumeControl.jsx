@@ -10,7 +10,7 @@ export default function VolumeControl({ playerColor }) {
 
   return (
     <>
-      <MuteButton className="vds-button mr-1" style={{ color: playerColor.icons }}>
+      <MuteButton className="vds-button mr-3!" style={{ color: playerColor.icons }}>
         {isMuted || volume == 0 ? (
           <MuteIcon className="mute-icon vds-icon" />
         ) : volume < 0.5 ? (
@@ -19,18 +19,18 @@ export default function VolumeControl({ playerColor }) {
           <VolumeHighIcon className="volume-high-icon vds-icon" />
         )}
       </MuteButton>
-      <div className="w-25 hidden md:flex">
-        <VolumeSlider.Root className="vds-slider">
+      <div className="w-15 rounded-none! hidden md:flex">
+        <VolumeSlider.Root className="vds-slider rounded-none!">
           <VolumeSlider.Track
-            className="vds-slider-track"
+            className="vds-slider-track rounded-none! h-1!"
             style={{ backgroundColor: playerColor.backBar }}
           />
           <VolumeSlider.TrackFill
-            className="vds-slider-track-fill vds-slider-track"
+            className="vds-slider-track-fill vds-slider-track rounded-none! h-1!"
             style={{ backgroundColor: playerColor.timeBar }}
           />
           <VolumeSlider.Thumb
-            className="vds-slider-thumb opacity-100! border-none!"
+            className="vds-slider-thumb opacity-100! border-none! w-3! h-3! "
             style={{ backgroundColor: playerColor.volumeDot }}
           />
         </VolumeSlider.Root>
@@ -38,4 +38,3 @@ export default function VolumeControl({ playerColor }) {
     </>
   );
 }
-

@@ -9,7 +9,7 @@ export default function CustomPlayButton({ playerColor }) {
 
   return (
     <PlayButton
-      className="flex w-25 h-8 justify-center items-center rounded-2xl pl-1 pr-3 mr-3 cursor-pointer hover:bg-gray-300!"
+      className="vds-button play-button"
       style={{
         color: playerColor.playButtonText,
         backgroundColor: playerColor.playButtonBg,
@@ -17,13 +17,13 @@ export default function CustomPlayButton({ playerColor }) {
     >
       {isPaused ? (
         <>
-          <PlayIcon className="play-icon vds-icon" size={30} />
-          <p className="text-base font-bold">Play</p>
+          <PlayIcon className="play-icon vds-icon" />
+          {/* <p className="text-base font-bold">Play</p> */}
         </>
       ) : (
         <>
-          <PauseIcon className="pause-icon vds-icon" size={30} />
-          <p className="text-base font-bold">Pause</p>
+          <PauseIcon className="pause-icon vds-icon" />
+          {/* <p className="text-base font-bold">Pause</p> */}
         </>
       )}
     </PlayButton>

@@ -22,5 +22,11 @@ export const hotSkyDescription = {
       </CreditsTitle>
     </CreditsWrapper>
   ),
-  description: <VideoDescription></VideoDescription>,
+  description: (
+    <VideoDescription>
+      {/* Un giovane "vacuum cleaner" decide di dare un taglio alla sua vita abitudinaria e partire per
+      un avventura, alla rassegna del gioco e di incontri speciali. Il film è stato realizzato con
+      la preziosa collaborazione di Damiano Carrara per la creazione del personaggio. */}
+    </VideoDescription>
+  ),
 };

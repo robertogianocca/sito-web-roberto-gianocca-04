@@ -17,4 +17,3 @@ export default function CustomFullscreenButton({ playerColor }) {
     </FullscreenButton>
   );
 }
-

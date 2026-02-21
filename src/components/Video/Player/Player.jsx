@@ -39,13 +39,13 @@ export default function Player({ video }) {
   });
 
   const playerColor = {
-    playButtonBg: "white",
+    playButtonBg: "#00C934",
     playButtonText: "black",
-    icons: "white",
-    backBar: "grey",
-    timeBar: "white",
-    progressBar: "grey",
-    volumeDot: "white",
+    icons: "#00C934",
+    volumeDot: "#00C934",
+    progressBar: "#009226",
+    timeBar: "#00C934",
+    backBar: "#005B18",
   };
 
   return (
@@ -57,22 +57,22 @@ export default function Player({ video }) {
       >
         <PlayerPlaceholderVideo video={video} />
         <div
-          ref={containerRef}
+          // ref={containerRef}
           className="relative w-full aspect-video min-h-[200px]"
-          style={{ cursor: hoverHandlers.cursorStyle }}
-          onMouseEnter={hoverHandlers.onMouseEnter}
-          onMouseLeave={hoverHandlers.onMouseLeave}
+          // style={{ cursor: hoverHandlers.cursorStyle }}
+          // onMouseEnter={hoverHandlers.onMouseEnter}
+          // onMouseLeave={hoverHandlers.onMouseLeave}
         >
           <MediaPlayer
             viewType="video"
             load="idle"
             key={video.id}
-            ref={player}
+            // ref={player}
             src={src}
             playsInline
             className="w-full h-full"
             aspectRatio="16/9"
-            style={{ cursor: hoverHandlers.cursorStyle, width: "100%", height: "100%" }}
+            // style={{ cursor: hoverHandlers.cursorStyle, width: "100%", height: "100%" }}
           >
             <MediaProvider>
               <Poster className="vds-poster" src=""></Poster>
@@ -87,7 +87,7 @@ export default function Player({ video }) {
             <Controls.Root className="vds-controls justify-end" ref={controlsRef}>
               <ControlsBackground />
               <Controls.Group className="vds-controls-group ">
-                <div className="buttons-bar flex flex-row justify-between px-3 pb-1.5">
+                <div className="buttons-bar flex flex-row justify-between px-3 ">
                   <div className="flex flex-row items-center">
                     <CustomPlayButton playerColor={playerColor} />
                     <CustomFullscreenButton playerColor={playerColor} />
@@ -100,12 +100,12 @@ export default function Player({ video }) {
                 <VideoTimeSlider playerColor={playerColor} />
               </Controls.Group>
             </Controls.Root>
-            <HoverCursor
+            {/* <HoverCursor
               containerRef={containerRef}
               playerRef={player}
               playerColor={playerColor}
               onHandlersChange={setHoverHandlers}
-            />
+            /> */}
           </MediaPlayer>
         </div>
       </motion.div>
